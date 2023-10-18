@@ -1,6 +1,13 @@
 
-export const AlbumName = () => {
+export const AlbumName = ({name,albumUrl}) => {
+ const url = albumUrl.spotify;
+
   return (
-    <div>AlbumName</div>
+    <>
+    
+    <a href={url}>{name}</a>
+   
+    </>
+   
   )
 }

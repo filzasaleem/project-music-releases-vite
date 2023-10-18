@@ -1,6 +1,20 @@
+import { AlbumName } from "./AlbumName"
+ import {ArtistName} from "./ArtistName"
+ import {CoverImage} from "./CoverImage";
 
-export const Album = () => {
+export const Album = ({name,albumUrl,images,artists}) => {
+    const albumName = <AlbumName name={name} albumUrl={albumUrl} />
+    const artistName = <ArtistName artists = {artists} />
+     const coverImage = <CoverImage images = {images} />
+
   return (
-    <div>Album</div>
+  
+      <div className="albums">
+        {coverImage}
+        {albumName} 
+        {artistName}
+      
+    </div>
+   
   )
 }
