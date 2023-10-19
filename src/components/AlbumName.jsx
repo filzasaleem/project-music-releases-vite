@@ -5,7 +5,7 @@ export const AlbumName = ({name,albumUrl}) => {
   return (
     <>
     
-    <a href={url}>{name}</a>
+    <a className="albumName" href={url}>{name}</a>
    
     </>
    
