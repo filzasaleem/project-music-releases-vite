@@ -10,7 +10,10 @@ export const Album = ({name,albumUrl,images,artists}) => {
   return (
   
       <div className="albums">
-        {coverImage}
+        <div className="imageContainer">
+          {coverImage}
+          {/* <img className="playButton" src='./assets/icons/play.svg' alt="Play Button" /> */}
+        </div>
         {albumName} 
         {artistName}
       

@@ -1,15 +1,16 @@
 
 export const CoverImage = ({images}) => {
 
- const firstImage = images[1];
+ const firstImage = images.length>1?  images[1] : images[0];
 
   const imgUrl = firstImage.url;
   const width = firstImage.width;
   const height = firstImage.height;
   const imgAlt = "image of the album"; 
   return (
-    <div className="imageContainer">
-     <img src={imgUrl} alt={imgAlt} />
-    </div>
+    <>
+     <img src={imgUrl} alt={imgAlt}/>
+     </>
+  
   )
 }
