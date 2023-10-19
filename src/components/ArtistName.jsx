@@ -20,7 +20,7 @@ const length = artistList.length
     <>
  <div>
       {artistList.map((artist,index) => (
-        <a key={artist.key} href={artist.url}>
+        <a className="artistName" key={artist.key} href={artist.url}>
           {artist.artistName} {seperator(index)}
         </a>
       ))}
