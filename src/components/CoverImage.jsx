@@ -11,7 +11,7 @@ export const CoverImage = ({images}) => {
   const height = firstImage.height;
   const imgAlt = "image of the album"; 
   return (
-    <div className="imageContainer">
+   <>
      <img src={imgUrl} alt={imgAlt} />
      <div className='iconsContainer'>
       <img
@@ -19,20 +19,20 @@ export const CoverImage = ({images}) => {
         alt='heart icon'
         id='heart-highlight'
         className='icons'
-      ></img>
+      />
       <img
         src={playIcon}
         alt='play icon'
         id='play-highlight'
         className='icons'
-      ></img>
+      />
       <img
         src={dotsIcon}
         alt='dots icon'
         id='dots-highlight'
         className='icons'
-      ></img>
+      />
      </div>
-    </div>
+     </>
   )
 }

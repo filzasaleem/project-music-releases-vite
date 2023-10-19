@@ -12,23 +12,14 @@ body {
   background-color: black;
   color: white;
 }
-<<<<<<< HEAD
-.imageContainer {
-  /* max-width: 640px;
-  max-height: 640px; */
-
-  max-width: 100%;
-  height: auto;
-=======
 .imageContainer{
   max-width: 640;
   max-height: 640;
   position: relative;
->>>>>>> 27653a351e6f6a9a005f0c1daef1393b721d44b3
 }
 .imageContainer:hover {
-  opacity: 0.3; /* Adjust the opacity value to control the dimness */
-  transition: opacity 0.3s; /* Add a smooth transition for the effect */
+  opacity: 0.3; 
+  transition: opacity 0.3s; 
 }
 header{
   text-align: center;
@@ -137,10 +128,14 @@ a:hover{
   border: solid white;
   }
 .playlistImage{
-  background-color: beige;
+  background-color: #202020;
   width: 50%;
   max-width: 50%;
   object-fit: contain;
+}
+.playlistImage:hover {
+  opacity: 0.3; 
+  transition: opacity 0.3s; 
 }
 .playlistImage img {
   width: 100%; 
