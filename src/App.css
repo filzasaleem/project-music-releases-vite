@@ -60,10 +60,7 @@ header{
   padding: 0 20px; /* Add some padding to the text */
 }
 
-.imageContainer:hover {
-  opacity: 0.3; 
-  transition: opacity 0.3s; 
-}
+
 
 .topText{
   text-align: center;
@@ -109,26 +106,31 @@ img {
   transition: 0.5s ease;
   
 }
+.imageContainer:hover {
+  opacity: 0.3; 
+  transition: opacity 0.5s; 
+}
 .iconsContainer {
   display: flex;
   justify-content: center;
   gap: 30px;
-  transition: 0.5s ease;
-  opacity: 0;
+  transition: 0.2s ease;
+  opacity: 1;
   position: absolute; 
   top: 50%;
   width: 100%;
   text-align: center;
+  z-index: 1
 }
 
-.imageContainer:hover .iconsContainer{
+.imageContainer:hover .icons{
   opacity: 1;
 }
 
 .icons {
   width: 30px;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: 0.2s ease;
 }
 
 .icons:hover {
@@ -145,6 +147,9 @@ a:hover{
 }
 
 .artistName {
+  color: #a0a0a0;
+}
+p{
   color: #a0a0a0;
 }
 

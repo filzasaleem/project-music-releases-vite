@@ -13,13 +13,14 @@ console.log(playlists);
 const renderAlbums =() =>{
 
   const filteredAlbums = albums.filter((album) => album.album_type == "album");
- return filteredAlbums.map(({id,name,external_urls,images,artists})=>(
+ return filteredAlbums.map(({id,name,external_urls,images,artists,release_date})=>(
    <Album 
    key={id} 
    name={name} 
    albumUrl={external_urls} 
    images={images} 
    artists={artists}
+   releaseDate= {release_date}
   />
  ));
 
@@ -29,13 +30,14 @@ const renderSingles =() =>{
   const singles = albums.filter((album) => album.album_type == "single");
 
 
-  return singles.map(({id,name,external_urls,images,artists})=>(
+  return singles.map(({id,name,external_urls,images,artists,release_date})=>(
     <Album 
     key={id} 
     name={name} 
     albumUrl={external_urls} 
     images={images} 
     artists={artists}
+    releaseDate= {release_date}
    />
   ));
 
