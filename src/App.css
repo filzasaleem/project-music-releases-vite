@@ -12,79 +12,110 @@ body {
   background-color: black;
   color: white;
 }
-.imageContainer{
-  max-width: 640;
-  max-height: 640;
-  position: relative;
-}
-.imageContainer:hover {
-  opacity: 0.3; 
-  transition: opacity 0.3s; 
-}
 header{
   text-align: center;
+  padding-top: 5em;
+  padding-bottom:5em ;
+  margin-left: 20%;
 }
 .wrapper{
   width: 100%;
   height: 100%;
   display: flex;
 }
-
-
-.wrapper .sidebar{
-  background: 		#202020;
-  /* border: solid white; */
-  position: fixed;
-  top: 0;
-  left: 0;
+.sidebar {
   width: 20%;
-  height: 100%;
   padding: 20px 0;
   transition: all 0.5s ease;
-  overflow: auto;
+  overflow-y: auto;
+  top: 0;
+  left: 0;
+  position: fixed; /* Fix the sidebar position */
+  height: 100%; /* Make the sidebar the full height of the viewport */
 }
 
-
-.container {
-  flex: 1;
-  margin-left: 20%;
-  height: 100%;
-  margin-right: auto;
+.albumsOuter{
+  width: 80%;
   display: flex;
-  align-items: flex-end;
-  
+  max-width: 80%;
+  flex-wrap: wrap;
+  /* padding: 1em; */
+  margin-left: 20%;
 }
-
-
-.albumsOuter {
-  padding: 2em;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  justify-content: center;
+.albums{
   
+  text-align: center;
+  padding: 0.5em;
+  flex: 1 0 20%;
+}
+.textCenter {
   width: 100%;
-} 
-
-.albums {
-  border: solid white 1px;
-  padding: 1em;
-  border-radius: 4px;
-  margin: 0 1em 1em 1em;
+  text-align: center;
+  margin-top: 20px; 
 }
 
+.textCenter h2 {
+  background-color: black; 
+  display: inline-block; /* Make the text inline-block to center it */
+  padding: 0 20px; /* Add some padding to the text */
+}
+
+.imageContainer:hover {
+  opacity: 0.3; 
+  transition: opacity 0.3s; 
+}
+
+.topText{
+  text-align: center;
+}
+
+.playlists {
+  display: flex; 
+  padding: 2%;
+  /* max-height: 80vh;  */
+  overflow-y: auto; 
+}
+.playlistImage{
+  background-color: #202020;
+  width: 50%;
+  max-width: 50%;
+  object-fit: contain;
+}
+
+.playlistImage:hover {
+  opacity: 0.3; 
+  transition: opacity 0.3s; 
+}
+.playlistImage img {
+  width: 100%; 
+  height: auto; 
+}
+.playlistText {
+ 
+  width: 50%;
+  text-align:left;
+  
+  padding: 10px; 
+}
+
+
+/* ---------------- */
+.imageContainer{
+ 
+  position: relative;
+}
 img {
   opacity: 1;
   transition: 0.5s ease;
-  width: 100%;
+  
 }
-
 .iconsContainer {
   display: flex;
   justify-content: center;
   gap: 30px;
   transition: 0.5s ease;
   opacity: 0;
-  position: absolute;
+  position: absolute; 
   top: 50%;
   width: 100%;
   text-align: center;
@@ -96,6 +127,8 @@ img {
 
 .icons {
   width: 30px;
+  opacity: 0;
+  transition: 0.5s ease;
 }
 
 .icons:hover {
@@ -119,61 +152,34 @@ a:hover{
   color: #fff;
 }
 
-.topText{
-  text-align: center;
-}
-.playlists {
-  display: flex; 
-  padding: 2%;
-  border: solid white;
-  }
-.playlistImage{
-  background-color: #202020;
-  width: 50%;
-  max-width: 50%;
-  object-fit: contain;
-}
-.playlistImage:hover {
-  opacity: 0.3; 
-  transition: opacity 0.3s; 
-}
-.playlistImage img {
-  width: 100%; 
-  height: auto; 
-}
-.playlistText {
- 
-  width: 50%;
-  text-align:left;
-  
-  padding: 10px; 
-}
 
-
-@media screen and (max-width: 1100px) {
-  .albumsOuter {
-    grid-template-columns: auto auto auto; /* Display three columns */
-  }
-  .albums {
-    padding: 0.5em; /* Reduce padding for smaller albums */
-  }
-}
 @media screen and (max-width: 768px) {
-  .albumsOuter {
-    grid-template-columns: auto auto; /* Two columns */
-  }
   .albums {
-    padding: 0.5em; 
+    flex: 50%; 
+      padding: 0.25em;
+  }
+  .sidebar {
+    display: none;
+  }
+  .albumsOuter {
+    margin: auto;
+    flex-wrap: wrap; 
   }
 }
 
-/* Media query for mobile devices (e.g., 480px wide or wider) */
-@media screen and (max-width: 480px) {
-  .albumsOuter {
-    grid-template-columns: auto; /* Single column */
+@media screen and (max-width: 467px) {
+  .sidebar {
+    display: none;
   }
   .albums {
-    padding: 0.25em; 
+    flex: 100%; /* 100% to take the full width of the container */
+    padding: 0.125em;
+  }
+  .albumsOuter {
+    margin: auto;
+    flex-wrap: wrap; 
   }
 }
+
+
 

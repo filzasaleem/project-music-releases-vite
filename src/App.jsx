@@ -11,8 +11,25 @@ const albums = data.albums.items;
 console.log(playlists);
 
 const renderAlbums =() =>{
+
+  const filteredAlbums = albums.filter((album) => album.album_type == "album");
+ return filteredAlbums.map(({id,name,external_urls,images,artists})=>(
+   <Album 
+   key={id} 
+   name={name} 
+   albumUrl={external_urls} 
+   images={images} 
+   artists={artists}
+  />
+ ));
+
+};
+const renderSingles =() =>{
   
-  return albums.map(({id,name,external_urls,images,artists})=>(
+  const singles = albums.filter((album) => album.album_type == "single");
+
+
+  return singles.map(({id,name,external_urls,images,artists})=>(
     <Album 
     key={id} 
     name={name} 
@@ -35,29 +52,31 @@ const renderPlaylists = ()=>{
    />
  
   ));
-}
-const myImage = playlists[0].images[0].url;
-
+};
 
 export const App = () => {
   return (
   <div>
-   
-   <Header/>
-
-   <div className="wrapper">
+    <Header/>
+    <div className="wrapper">
     
-        <div className="sidebar">
-            <h3 className="topText">Playlist</h3>     
-          {renderPlaylists()}
-        </div>
-        <div className="container">
-         <div className="albumsOuter">{renderAlbums()}</div>
-         </div>
+    <div className="sidebar">
+        <h3 className="topText">Playlist</h3>     
+      {renderPlaylists()}
     </div>
-   
-   
-   
+
+    <div className="albumsOuter">
+        <div className="textCenter">
+          <h2>Singles</h2>
+        </div>
+        {renderSingles()}
+        <div className="textCenter">
+          <h2>Albums</h2>
+        </div>
+        {renderAlbums()}
+    </div>
+
+</div>
 
   </div>);
 };
