@@ -242,6 +242,26 @@
             "name": "102 Boyz",
             "type": "artist",
             "uri": "spotify:artist:78TTCmh2koperK5NBn7DgR"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2IjiuEObrCKyZvSb8xLxG9"
+            },
+            "href": "https://api.spotify.com/v1/artists/2IjiuEObrCKyZvSb8xLxG9",
+            "id": "2IjiuEObrCKyZvSb8xLxG9",
+            "name": "filous",
+            "type": "artist",
+            "uri": "spotify:artist:2IjiuEObrCKyZvSb8xLxG9"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4PvnP3yCzrT289cX3wCdOx"
+            },
+            "href": "https://api.spotify.com/v1/artists/4PvnP3yCzrT289cX3wCdOx",
+            "id": "4PvnP3yCzrT289cX3wCdOx",
+            "name": "Yung Hurn",
+            "type": "artist",
+            "uri": "spotify:artist:4PvnP3yCzrT289cX3wCdOx"
           }
         ],
         "available_markets": [

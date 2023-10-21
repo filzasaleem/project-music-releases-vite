@@ -6,7 +6,7 @@ import { Playlist } from "./components/Playlist";
 
 const playlists = playlistData.playlists.items;
 const albums = data.albums.items;
-// console.log(albums);
+ console.log(albums);
 
 console.log(playlists);
 
