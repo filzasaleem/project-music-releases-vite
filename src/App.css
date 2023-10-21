@@ -27,12 +27,15 @@ header{
   width: 20%;
   padding: 20px 0;
   transition: all 0.5s ease;
-  overflow-y: auto;
+   overflow-y: auto;  
   top: 0;
   left: 0;
-  position: fixed; /* Fix the sidebar position */
-  height: 100%; /* Make the sidebar the full height of the viewport */
+  position: fixed; 
+  height: 100%; 
+  max-height: 100%;
+  overflow-x: hidden;
 }
+
 
 .albumsOuter{
   width: 80%;
@@ -70,7 +73,6 @@ header{
   display: flex; 
   padding: 2%;
   /* max-height: 80vh;  */
-  overflow-y: auto; 
 }
 .playlistImage{
   background-color: #202020;
