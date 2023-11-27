@@ -27,7 +27,7 @@ Transition from using a JSON file to a dynamic API for fetching music release da
 By addressing these areas, the Music Releases app can continue to evolve into a more feature-rich and visually appealing platform.
 
 ## View it Live
-Experience the Weather App live: [Filza's music App ](https://our-music-release-project.netlify.app/).
+Experience the Music App live: [Filza's music App ](https://our-music-release-project.netlify.app/).
 
 
 ## Instructions
