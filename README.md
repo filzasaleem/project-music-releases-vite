@@ -1,6 +1,8 @@
-
+A project by [Filza Saleem](https://github.com/filzasaleem) and [Lina Dam ](https://github.com/Picsies)
 # Music Releases
 The Music Releases app is designed to showcase albums and singles, focusing on the implementation of React components and props.
+
+
 
 ## Dependency Installation & Startup Development Server
 
