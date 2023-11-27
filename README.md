@@ -1,37 +1,28 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/music-releases.svg" alt="Project Banner Image">
-  </a>
-</h1>
 
 # Music Releases
+The Music Releases app is designed to showcase albums and singles, focusing on the implementation of React components and props.
 
-Replace this readme with your own information about your project.
+## Dependency Installation & Startup Development Server
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+1.Run npm i to install dependencies.
+2. Use code . to open the code in Visual Studio Code.
+3. Start the development server with npm run dev in your terminal.
 
-## Getting Started with the Project
+## The challange
+The app seamlessly displays both singles and albums, featuring a sidebar as well. Notably, when an album involves multiple artists, their names are presented with commas, and the last one is separated by an "&". The app incorporates CSS hover effects and includes SVG icons when hover over an image.
 
-### Dependency Installation & Startup Development Server
 
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
+## Technologies Used
+### React:
+The core of the app is built using React, a JavaScript library for building user interfaces.
 
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
+### Props:
+Props are employed to pass data between React components, facilitating the dynamic display of music releases.
 
-```bash
-npm i && code . && npm run dev
-```
+## View it Live
 
-### The Problem
+Experience the Weather App live: [Filza's music App ](https://our-music-release-project.netlify.app/).
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-### View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
 
 ## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+For detailed instructions on this project, refer to the <a href="instructions.md"> instructions.md </a> file.
